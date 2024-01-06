@@ -1,0 +1,17 @@
+h1 {
+  color: brown;
+}
+.topnav {
+  border: 4px solid grey;
+}
+.world-map {
+  width: 600px;
+}
+.world-map:hover {
+  cursor: pointer;
+}
+
+.flag-of-india {
+  display: block;
+  width: 300px;
+}
