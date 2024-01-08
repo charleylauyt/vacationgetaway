@@ -1,11 +1,42 @@
+body {
+  background: white;
+}
+
 h1 {
-  color: brown;
+  text-align: center;
+  font-family: "Lemon", serif;
+  color: Black;
+  font-size: 70px;
+  margin-bottom: 0px;
 }
+.spinning-world-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 249px;
+  height: 249px;
+}
+
 .topnav {
-  border: 4px solid grey;
+  border: 4px solid #d2ddc5;
+  border-radius: 20px;
+  background: #d2ddc5;
+  text-align: center;
+  font-family: "Lemon", serif;
+  font-size: 40px;
+  padding: 30px;
+  margin-bottom: 50px;
 }
+.nav-button {
+  text-align: center;
+  margin: 150px;
+  padding-left: 80px;
+}
+
 .world-map {
-  width: 600px;
+  margin: 10px;
+  border-radius: 20px;
+  width: 2100px;
 }
 .world-map:hover {
   cursor: pointer;
@@ -59,6 +90,7 @@ h1 {
 }
 
 .flag {
+  border: 1px solid black;
   border-radius: 20px;
   transition: 200ms solid ease-in-out;
 }
