@@ -1,101 +1,109 @@
-body {
-  background: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
-  font-family: "Lemon", serif;
-  color: Black;
-  font-size: 70px;
-  margin-bottom: 0px;
+/* header */
+a {
+  color: gray;
+  text-decoration: none;
 }
-.spinning-world-gif {
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 249px;
-  height: 249px;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+/*  
 .topnav {
-  border: 4px solid #d2ddc5;
-  border-radius: 20px;
-  background: #d2ddc5;
-  text-align: center;
-  font-family: "Lemon", serif;
-  font-size: 40px;
-  padding: 30px;
-  margin-bottom: 50px;
+  border: 4px solid grey;
 }
-.nav-button {
-  text-align: center;
-  margin: 150px;
-  padding-left: 80px;
-}
-
 .world-map {
-  margin: 10px;
-  border-radius: 20px;
-  width: 2100px;
+  width: 600px;
 }
 .world-map:hover {
   cursor: pointer;
 }
 
-.india-flag {
-  display: inline;
+.flag-of-india {
+  display: block;
   width: 300px;
-  height: 199.922px;
 }
-.seychelles-flag {
-  display: inline;
-  width: 300px;
-  height: 199.922px;
-}
-
-.hong-kong-flag {
-  display: inline;
-  width: 300px;
-  height: 199.922px;
-}
-
-.congo-flag {
-  display: inline;
-  width: 300px;
-  height: 199.922px;
-}
-
-.grenada-flag {
-  display: inline;
-  width: 300px;
-  height: 199.922px;
-}
-
-.canada-flag {
-  display: inline;
-  width: 300px;
-  height: 199.922px;
-}
-
-.italy-flag {
-  display: inline;
-  width: 300px;
-  height: 199.922px;
-}
-
-.japan-flag {
-  display: inline;
-  width: 300px;
-  height: 199.922px;
-}
-
-.flag {
-  border: 1px solid black;
-  border-radius: 20px;
-  transition: 200ms solid ease-in-out;
-}
-.flag:hover {
-  position: absolute;
-  width: 900px;
-  height: 599.766px;
-}
+*/
