@@ -11,7 +11,59 @@ h1 {
   cursor: pointer;
 }
 
-.flag-of-india {
-  display: block;
+.india-flag {
+  display: inline;
   width: 300px;
+  height: 199.922px;
+}
+.seychelles-flag {
+  display: inline;
+  width: 300px;
+  height: 199.922px;
+}
+
+.hong-kong-flag {
+  display: inline;
+  width: 300px;
+  height: 199.922px;
+}
+
+.congo-flag {
+  display: inline;
+  width: 300px;
+  height: 199.922px;
+}
+
+.grenada-flag {
+  display: inline;
+  width: 300px;
+  height: 199.922px;
+}
+
+.canada-flag {
+  display: inline;
+  width: 300px;
+  height: 199.922px;
+}
+
+.italy-flag {
+  display: inline;
+  width: 300px;
+  height: 199.922px;
+}
+
+.japan-flag {
+  display: inline;
+  width: 300px;
+  height: 199.922px;
+}
+
+.flag {
+  border-radius: 20px;
+  transition: 200ms solid ease-in-out;
+}
+.flag:hover {
+  position: absolute;
+  width: 900px;
+  height: 599.766px;
 }
