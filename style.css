@@ -8,11 +8,7 @@
 
 /* header */
 a {
-<<<<<<< HEAD
   color: #0077b6;
-=======
-  color: gray;
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
   text-decoration: none;
 }
 
@@ -20,20 +16,14 @@ li {
   list-style: none;
 }
 
-<<<<<<< HEAD
-=======
 /* nav bar */
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
 .navbar {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-<<<<<<< HEAD
   background-color: #f9f9f9;
-=======
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
 }
 
 .nav-menu {
@@ -41,7 +31,6 @@ li {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-<<<<<<< HEAD
 }
 
 .nav-branding {
@@ -51,10 +40,10 @@ li {
 
 .nav-link {
   transition: 0.7s ease;
-=======
   margin: 0;
   padding: 0;
   display: flex;
+  color: #0077b6;
 }
 
 .nav-item {
@@ -65,14 +54,13 @@ li {
   left: 0;
 }
 
-.nav-link {
-text-decoration: none;
-color: #333;
-font-weight: bold;
-position: relative;
-display: inline-block;
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
-}
+/* .nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+} */
 
 /*dropdown*/
 .dropdown {
@@ -104,19 +92,7 @@ display: inline-block;
   display: block;
   font-weight: 200;
 }
-<<<<<<< HEAD
 /* dropdown ends >  */
-=======
-<!--dropdown end>
-.nav-branding {
-  font-size: 2rem;
-}
-
-.nav-link {
-  transition: 0.7s ease;
-}
-
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
 .nav-link:hover {
   color: blue;
 }
@@ -133,11 +109,7 @@ display: inline-block;
   margin: 5px auto;
   -webkit-transition: all 0.3 ease-in-out;
   transition: all 0.3 ease-in-out;
-<<<<<<< HEAD
   background-color: #0077b6;
-=======
-  background-color: gray;
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
 }
 
 @media (max-width: 768px) {
@@ -165,7 +137,6 @@ display: inline-block;
     width: 100%;
     text-align: center;
     transition: 0.3s;
-<<<<<<< HEAD
   }
 
   .nav-item {
@@ -174,17 +145,14 @@ display: inline-block;
 
   .nav-menu.active {
     left: 0;
-=======
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
   }
 }
 
 /* body */
-<<<<<<< HEAD
 .main-container {
   display: flex;
   flex-direction: row;
@@ -253,20 +221,6 @@ h3 {
   margin-right: auto;
   margin-left: auto;
 } */
-=======
-
-.india-body {
-  color: gray;
-  margin: 0;
-  padding-top: 0px;
-  padding-right: 60px;
-  padding-left: 60px;
-  padding-bottom: 60px;
-  text-align: justify;
-  word-wrap: break-word;
-  flex-direction: column;
-}
->>>>>>> b516a937800ff27c3dcadb48111948518b4d6b57
 
 /*  
 .topnav {
