@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Getaway</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="" class="nav-branding">Vacation Getaway</a>
+  
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About</a>
+            </li>
+            <!-- dropdown -->
+            <div class="dropdown">
+              <a href="#" class="nav-link">Places to Go</a>
+              <div class="dropdown-content">
+                <a href="placesToGoIndia.html" style="color: green">India</a>
+                <a href="placesToGoHK.html" style="color: green">Hong Kong</a>
+                <a href="placesToGoSeychelles.html" style="color: green">Seychelles</a>
+                <a href="placesToGoGrenada.html" style="color: green">Grenada</a>
+                <a href="PlacesToGoItaly.html" style="color: green">Italy</a>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact</a>
+            </li>
+          </ul>
+  
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <div class="content-container">
+        <h1>Italy</h1>
+        <div class="venicephoto">
+            <img src="Italy images/Venice.jpg" alt="venice" width="700" height="400">
+            <h2>Culture</h2>
+            <p class="mt10">
+                Italy is worldwide famous for its art, culture, food and architecture, world-renowned food, opera, literature, and fashion. The country is known for its mesmerizing topography, pristine beaches, historical artifacts, monuments, and more. With many beautiful cities, a rich history, stunning landscapes, some of the most beautiful Mediterranean islands and of course delicious food.
+            </p>
+        </div>
+        <div class="content-container">
+            <h2>Food</h2>
+            <div class="foodpic">
+                <img src="Italy images/Italian food.jpg" alt="Italianfood" width="700" height="400">   
+            </div>
+            <p class="mt10">
+                Pizza is the world’s most loved and renowned food contributed by Italy. Pasta is the second in line to make the world fall in love with its taste. Today pizza is found in every corner of the world, yet no one can match the savoury and cheesy pizzas Italy has to offer.
+The greatest aspect of Italian food is its bold flavour combinations. Fresh ingredients such as tomatoes, garlic, onions, basil, oregano, rosemary, and olive oil are common in classic Italian dishes.
+
+            </p>
+        </div>
+    <div class="content-container">
+        <h2>Attractions</h2>
+        <h3>Popular Cities in Italy</h3>
+        <div class="Romepic">
+            <img src="Italy images/The Colosseum Rome.jpg" alt="Rome" width="700" height="400">
+        </div>
+        <p class="mt10">
+            <h3>Rome: the capital</h3>
+        The Eternal City attracts millions of tourists every year.
+        Rome is a beautiful city, with the added advantage of being very easy to visit on foot. It’s full of ancient monuments, beautiful squares and museums. Here are the must-see:
+        
+        <ul>
+            <li>The Colosseum</li>
+            <li>The Roman forum</li>
+            <li>Vatican City</li>
+            <li>The Pantheon</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="content-container">
+        <div class="Florencepic">
+            <img src="Italy images/Florence.jpg" alt="Florence" width="700" height="400">
+        </div>
+        <p class="mt10">
+            <h3>Florence: the art city</h3>
+            Florence, undoubtedly the most beautiful city of Tuscany, is home to numerous museums and Renaissance palaces. The Cultural Heritage is immense: Italian works of art are located in Florence. 
+            Must-see places in Florence:
+        <ul>
+            <li>The Duomo</li>
+            <li>The Uffizi gallery and its famous paintings</li>
+            <li>The basilica San Miniato al Monte: a panoramic view over Florence. </li>
+            <li>Piazza della Signoria: a real open-air museum</li>
+        </ul>
+        </p>
+    </div>
+    
+    <div class="content-container">
+        <div class="Venicepic">
+            <img src="Italy images/Venice 2.jpg" alt="Venice" width="700" height="400">
+        </div>
+        <p class="mt10">
+            <h3>Venice: the romantic city</h3>
+            Venice is one of the most touristic cities in Europe. With its numerous canals and its famous gondola rides, it’s also the perfect destination for a romantic stay. The Venice Carnaval takes place every year in February and attracts tourists from all over the world.
+            The places to visit in Venice:
+        <ul>
+            <li>Saint Mark’s Square: heart of the city </li>
+            <li>Saint Mark’s Basilica and its golden mosaics</li>
+            <li>The Ducale Palace</li>
+            <li>The islands of Murano (world famous for glassmaking)</li>
+        </ul>
+        </p>
+    </div>
+    
+    <div class="content-container">
+        <div class="Milanpic">
+            <img src="Italy images/Milan.jpg" alt="Milan" width="700" height="400">
+        </div>
+        <p class="mt10">
+            <h3>Milan: the capital of fashion</h3>
+            Milan is the capital of fashion and design, with many renowned designer’s luxury boutiques and showrooms. In addition, there are also many historic buildings to visit in the city!
+            The tourist attraction you shouldn’t miss in Milan:
+        <ul>
+            <li>The Piazza del Duomo and its magnificent Cathedral </li>
+            <li>The Sforza Castle and Parco Sempione</li>
+            <li>The Vittorio Emmanuel II gallery </li>
+            <li>The Pinacoteca di Brera </li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="rightcolumn">
+        <div>
+          <h2>About Us</h2>
+          <p class="mt10">
+            Some text about me in culpa qui officia deserunt mollit anim..
+          </p>
+        </div>
+      </div>
+      <!-- right column ends -->
+    </div>
+    <!-- main container ends -->
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+
+    <!-- footer starts -->
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
