@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Getaway</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
       />
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 <body>
      <header>
@@ -31,6 +34,7 @@
                     <a href="placesToGoSeychelles.html" style="color: green">Seychelles</a>
                     <a href="placesToGrenada.html" style="color: green">Grenada</a>
                     <a href="placesToGoItaly.html" style="color: green">Italy</a>
+                    <a href="placesToGoCanada.html" style="color: green">Canada</a>
                   </div>
                 </div>
                 <li class="nav-item">
@@ -45,41 +49,46 @@
               </div>
             </nav>
     </header>
-    <h1>Seychelles</h1>
-    <div class="skyview">
-      <img src="seychelles images/Aerial-view-on-the-coastline-of-the-Seychelles-Islands-and-luxury-Eden-Island-from-Victoria-viewpoint-in-Mahé.jpeg" alt="seychellesskyview" width="700" height="400">
-    </div>
-<div class="content-container">
-    <h2>Culture</h2>
-    <div class="culture">
+
+    <div class="main-container">
+      <div class="leftcolumn">
+        <div class="content-container">
+        <h2>Seychelles</h2>
+          <div class="skyview">
+          <img src="seychelles images/Aerial-view-on-the-coastline-of-the-Seychelles-Islands-and-luxury-Eden-Island-from-Victoria-viewpoint-in-Mahé.jpeg" alt="seychellesskyview" width="700" height="400">
+         </div>
+
+        <h2>Culture</h2>
+        <div class="culture">
         <img src="seychelles images/culture.jpeg" alt="culture" width="450" height="500">
-    </div>
-    <p class="mt10">
+       
+        <p class="mt10">
         Seychelles is in the Indian Ocean and is made up of 115 islands. It's culture has been affected by the amalgamation of different races- African, European, French and Indian. Moutia is one traditional dance in Seychelles with deep roots in the history of African slavery. It's basically swaying your hips to and fro to the beats of African music. Another traditional dance is Sega, where women dressed in skirts with a wide frill swing their waists.
-    </p>
-</div>
-<div class="content-container">
-    <h2>Music</h2>
-    <div class="musicpic">
+       </p>
+        </div>
+
+      <div class="content-container">
+        <h2>Music</h2>
+        <div class="musicpic">
         <img src="seychelles images/music.jpeg" alt="music" width="700" height="400">
-    </div>
-    <p class="mt10">
+      </div>
+        <p class="mt10">
         Seychelles music uses a lot of percussion instruments. Seychellois love playing music in bazaars along the beach. Sega and Moutia is the most popular type of music in Seychelles. Seychelles also has its own version of the European contredanse called the Kontredans, and of Reggae called the Seggae and Mouggae. Zouk is a new genre and is a mix of traditional and modern beats. 
-    </p>
-</div>
-<div class="content-container">
-    <h2>Cuisine</h2>
-    <div class="cuisinepic">
+       </p>
+      </div>
+      <div class="content-container">
+      <h2>Cuisine</h2>
+      <div class="cuisinepic">
         <img src="seychelles images/food.jpeg" alt="food" width="700" height="400">
-    </div>
-    <div class="drinkpic">
+      </div>
+      <div class="drinkpic">
         <img src="seychelles images/takamaka.jpeg" alt="takamaka" width="700" height="400">
-    </div>
-    <p class="mt10">
+      </div>
+      <p class="mt10">
         The staple food consists of fish and shellfish dishes along with coconut, mangoes and breadfruit. Different types of curry such as shark curry, octopus curry and chicken coconut curry are very popular. Ladob is a traditional dessert consisting of a creamy sauce made up of sweet potato, plantain, coconut milk, nutmeg and vanilla. Takamaka rum is only made in Seychelles and is extremely popular.
-    </p>
-</div>
-<div class="content-container">
+      </p>
+      </div>
+    <div class="content-container">
     <h2>Attractions</h2>
    <h3>Creole Festival</h3> 
    <div class="festival1">
@@ -105,6 +114,9 @@
     Choose from a rangeof actvities such as hiking, snorkeling, biking on La Digue island and experiencing a glass bottom boat excursion. If you are looking for a more peaceful adventure, try visiting beaches like Beau Vallon, Port Launay and many more.
    </p>
 </div>
+</div>
+      </div>
+
 <div class="rightcolumn">
     <div>
       <h2>About Us</h2>
@@ -112,13 +124,36 @@
         Some text about me in culpa qui officia deserunt mollit anim..
       </p>
     </div>
-  </div>
+    </div>
+    </div>
   <!-- right column ends -->
-</div>
 <!-- main container ends -->
 <div class="footer">
-  <h2>Footer</h2>
-</div>
+      <section class="home-newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="single">
+                <h2>Subscribe to our Newsletter</h2>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                  />
+                  <span class="input-group-btn">
+                    <button class="btn btn-theme" type="submit">
+                      Subscribe
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
 
 <!-- footer starts -->
 
