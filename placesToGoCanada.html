@@ -15,55 +15,26 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <div id="navbar-container"></div>
+  <script>
+    fetch('navigation.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
   </head>
 
-  <!-- header starts -->
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="./home.html" class="nav-branding">Vacation Getaway</a>
-
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="home.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">About</a>
-          </li>
-          <!-- dropdown -->
-          <div class="dropdown">
-            <a href="#" class="nav-link">Places to Go</a>
-            <div class="dropdown-content">
-              <a href="placesToGoCanada.html" style="color: green">Canada</a>
-              <a href="placesToGoGrenada.html" style="color: green">Grenada</a>
-              <a href="placesToGoHK.html" style="color: green">Hong Kong</a>
-              <a href="placesToGoIndia.html" style="color: green">India</a>
-              <a href="placesToGoItaly.html" style="color: green">Italy</a>
-              <a href="placesToGoSeychelles.html" style="color: green"
-                >Seychelles</a
-              >
-            </div>
-          </div>
-          <li class="nav-item">
-            <a href="" class="nav-link">Contact</a>
-          </li>
-        </ul>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    <!-- header ends -->
+    <iframe
+    width="2000"
+    height="300"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCj5HmCQ3mEZhqolWiZCYSehwnMgMMZ_lY&center=56.130340576171875,-106.34676361083984&zoom=3">
+  </iframe>
     <!-- main container starts -->
     <div class="main-container">
       <div class="leftcolumn">
@@ -116,7 +87,7 @@
           <div class="mt10">
             <img src="./canada images/image-3.jpeg" width="700" height="400" />
           </div>
-          <h3>Society</h3>
+          <h3>Heading 3 - to add subheading here</h3>
           <p class="mt10">
             Canada's culture draws influences from its broad range of
             constituent nationalities and policies that promote a "just society"
@@ -133,11 +104,7 @@
 
         <div class="content-container">
           <div class="mt10">
-            <img
-              src="./canada images/indigineous-art.jpg"
-              width="700"
-              height="400"
-            />
+            <img src="/hong kong/streetfood.jpg" width="700" height="400" />
           </div>
           <h3>Art</h3>
           <p class="mt10">
@@ -152,17 +119,19 @@
         </div>
 
         <div class="content-container">
-          <h2>Sports</h2>
+          <h2>Heading 2...add text here</h2>
           <div class="mt10">
-            <img src="/canada images/ice-hockey.jpg" width="700" height="400" />
+            <img src="/hong kong/thepeak.jpg" width="700" height="400" />
           </div>
-          <h3>Ice Hockey</h3>
-          <p class="mt10">
-            The modern sport of ice hockey was developed in Canada, most notably
-            in Montreal, where the first indoor game was played on March 3,
-            1875. Some characteristics of that game, such as the length of the
-            ice rink and the use of a puck, have been retained to this day.
-          </p>
+          <h3>Attraction place...add text here</h3>
+          <p class="mt10">Paragraph...add text here</p>
+          <div class="mt10">
+            <img src="/hong kong/temple.jpg" width="700" height="400" />
+          </div>
+          <h3>Attraction place...add text here</h3>
+          <p class="mt10">Paragraph...add text here</p>
+        </div>
+      </div>
       <!-- right column starts -->
       <div class="rightcolumn">
         <div>
@@ -176,29 +145,7 @@
     </div>
     <!-- main container ends -->
     <div class="footer">
-      <section class="home-newsletter">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="single">
-                <h2>Subscribe to our Newsletter</h2>
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter your email"
-                  />
-                  <span class="input-group-btn">
-                    <button class="btn btn-theme" type="submit">
-                      Subscribe
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <h2>Footer</h2>
     </div>
 
     <!-- footer starts -->

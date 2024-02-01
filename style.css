@@ -9,6 +9,7 @@
 /* header */
 a {
   color: #0077b6;
+  color: gray;
   text-decoration: none;
 }
 
@@ -17,7 +18,7 @@ li {
 }
 
 /* nav bar */
-.navbar {
+.navbar-container {
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,6 @@ li {
 .nav-branding {
   font-size: 3rem;
   font-weight: 300;
-  text-decoration: none;
 }
 
 .nav-link {
@@ -44,7 +44,6 @@ li {
   margin: 0;
   padding: 0;
   display: flex;
-  color: #0077b6;
 }
 
 .nav-item {
@@ -55,13 +54,13 @@ li {
   left: 0;
 }
 
-/* .nav-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  position: relative;
-  display: inline-block;
-} */
+.nav-link {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+position: relative;
+display: inline-block;
+}
 
 /*dropdown*/
 .dropdown {
@@ -94,6 +93,15 @@ li {
   font-weight: 200;
 }
 /* dropdown ends >  */
+<!--dropdown end>
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
 .nav-link:hover {
   color: blue;
 }
@@ -111,6 +119,7 @@ li {
   -webkit-transition: all 0.3 ease-in-out;
   transition: all 0.3 ease-in-out;
   background-color: #0077b6;
+  background-color: gray;
 }
 
 @media (max-width: 768px) {
@@ -157,13 +166,30 @@ li {
 .main-container {
   display: flex;
   flex-direction: row;
-  padding: 10px 90px;
+  padding: 10px;
 }
 
 .leftcolumn {
-  float: left;
-  width: 75%;
+  flex: 1; 
   color: #0077b6;
+}
+
+.rightcolumn {
+  flex: 1; 
+  padding-left: 40px;
+  color: #0077b6;
+}
+
+@media screen and (max-width: 800px) {
+  .main-container {
+    flex-direction: column; 
+  }
+
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .content-container {
@@ -175,24 +201,18 @@ h2 {
   font-size: 60px;
   font-weight: 300;
   color: #0077b6;
+  font-family: monaco;
 }
 
 h3 {
   font-size: 24px;
   font-weight: 400;
 }
-.rightcolumn {
-  width: 25%;
-  padding-left: 40px;
-  color: #0077b6;
-}
 
-@media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
+p {
+  font-size: small;
+  color: #000000;
+  margin-bottom: 0 !important;
 }
 
 .mt10 {
@@ -206,62 +226,84 @@ h3 {
   background: #f9f9f9;
   margin-top: 20px;
 }
+/* .india-body {
+  display: flex;
+  color: gray;
+  margin: 0;
+  text-align: justify;
+  word-wrap: break-word;
+  flex-direction: column;
+  box-sizing: border-box;
+} */
 
-.home-newsletter {
-  padding: 80px 0;
-  background: #0077b6;
-}
+/* .container {
+  display: flex;
+  padding: 40px 40px 40px;
+  margin-right: auto;
+  margin-left: auto;
+} */
 
-.home-newsletter .single {
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-.home-newsletter .single h2 {
-  font-size: 22px;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-.home-newsletter .single .form-control {
-  height: 50px;
-  background: rgba(255, 255, 255, 0.6);
-  border-color: transparent;
-  border-radius: 20px 0 0 20px;
-}
-.home-newsletter .single .form-control:focus {
-  box-shadow: none;
-  border-color: #243c4f;
-}
-.home-newsletter .single .btn {
-  min-height: 50px;
-  border-radius: 0 20px 20px 0;
-  background: #243c4f;
-  color: #fff;
+.india-body {
+  color: gray;
+  margin: 0;
+  padding-top: 0px;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  text-align: justify;
+  word-wrap: break-word;
+  flex-direction: column;
 }
 
-.svg-parent-container {
+img {
+ object-fit: cover;
+}
+
+#greeting {
+  font-family: monaco;
+  text-align: left;
+  margin: 10px 10px 10px 30px;
+  font-size: 14px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel {
   display: flex;
 }
 
-.svg-container {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-svg {
-  width: 1200px;
-}
-.text-alongside-svg-container {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 600px;
+.carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
-.world-gif {
-  width: 50px;
-  padding-bottom: 5px;
+.read-more {
+  font-size: x-small;
+  color: coral;
 }
+
+.col-md-6 {
+  padding-bottom: 25px;
+}
+/*  
+.topnav {
+  border: 4px solid grey;
+}
+.world-map {
+  width: 600px;
+}
+.world-map:hover {
+  cursor: pointer;
+}
+
+.flag-of-india {
+  display: block;
+  width: 300px;
+}
+*/
