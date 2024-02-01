@@ -15,61 +15,33 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <div id="navbar-container"></div>
+  <script>
+    fetch('navigation.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
   </head>
-
-  <!-- hearder starts -->
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="./home.html" class="nav-branding">Vacation Getaway</a>
-
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="home.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">About</a>
-          </li>
-          <!-- dropdown -->
-          <div class="dropdown">
-            <a href="#" class="nav-link">Places to Go</a>
-            <div class="dropdown-content">
-              <a href="placesToGoCanada.html" style="color: green">Canada</a>
-              <a href="placesToGoGrenada.html" style="color: green">Grenada</a>
-              <a href="placesToGoHK.html" style="color: green"
-                >Hong Kong</a>
-              <a href="placesToGoIndia.html" style="color: green">India</a>
-              <a href="placesToGoItaly.html" style="color: green">Italy</a>
-              <a href="placesToGoSeychelles.html" style="color: green">Seychelles</a>
-            </div>
-          </div>
-          <li class="nav-item">
-            <a href="" class="nav-link">Contact</a>
-          </li>
-        </ul>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    <!-- header ends -->
+    <iframe
+    width="2000"
+    height="300"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCj5HmCQ3mEZhqolWiZCYSehwnMgMMZ_lY&center=22.319284439086914,114.16939544677734&zoom=7">
+  </iframe>
+  
     <!-- main container starts -->
     <div class="main-container">
       <div class="leftcolumn">
         <div class="content-container">
           <h2>Hong Kong</h2>
           <div class="mt10">
-            <img src="/hongkongpic/harbour.jpg" width="700" height="400" />
+            <img src="/hong kong/harbour.jpg" width="700" height="400" />
           </div>
           <h3>History and Identification</h3>
           <p class="mt10">
@@ -85,7 +57,7 @@
 
         <div class="content-container">
           <div class="mt10">
-            <img src="/hongkongpic/neonlights.jpg" width="700" height="400" />
+            <img src="/hong kong/neonlights.jpg" width="700" height="400" />
           </div>
           <h3>Neon Lights</h3>
           <p class="mt10">
@@ -101,7 +73,7 @@
         <div class="content-container">
           <h2>Taste of Hong Kong</h2>
           <div class="mt10">
-            <img src="/hongkongpic/dimsum.jpg" width="700" height="400" />
+            <img src="/hong kong/dimsum.jpg" width="700" height="400" />
           </div>
           <h3>Food in Daily Life</h3>
           <p class="mt10">
@@ -121,7 +93,7 @@
 
         <div class="content-container">
           <div class="mt10">
-            <img src="/hongkongpic/streetfood.jpg" width="700" height="400" />
+            <img src="/hong kong/streetfood.jpg" width="700" height="400" />
           </div>
           <h3>Street Food</h3>
           <p class="mt10">
@@ -141,7 +113,7 @@
         <div class="content-container">
           <h2>Attractions</h2>
           <div class="mt10">
-            <img src="/hongkongpic/thepeak.jpg" width="700" height="400" />
+            <img src="/hong kong/thepeak.jpg" width="700" height="400" />
           </div>
           <h3>Victoria Peak</h3>
           <p class="mt10">
@@ -155,7 +127,7 @@
             magic up here if you can get past that.
           </p>
           <div class="mt10">
-            <img src="/hongkongpic/temple.jpg" width="700" height="400" />
+            <img src="/hong kong/temple.jpg" width="700" height="400" />
           </div>
           <h3>Man Mo Temple</h3>
           <p class="mt10">
@@ -182,29 +154,7 @@
     </div>
     <!-- main container ends -->
     <div class="footer">
-      <section class="home-newsletter">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="single">
-                <h2>Subscribe to our Newsletter</h2>
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter your email"
-                  />
-                  <span class="input-group-btn">
-                    <button class="btn btn-theme" type="submit">
-                      Subscribe
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <h2>Footer</h2>
     </div>
 
     <!-- footer starts -->

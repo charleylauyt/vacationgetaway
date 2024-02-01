@@ -15,228 +15,82 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <div id="navbar-container"></div>
+  <script>
+    fetch('navigation.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      });
+  </script>
   </head>
   <!-- Header starts -->
-  <body>
+<body>
+  <iframe
+    width="2000"
+    height="300"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCj5HmCQ3mEZhqolWiZCYSehwnMgMMZ_lY&center=12.116499900817871,-61.67903137207031&zoom=11">
+  </iframe>
     <header>
-      <nav class="navbar">
-        <a href="./home.html" class="nav-branding">Vacation Getaway</a>
-
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="home.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">About</a>
-          </li>
-          <!-- dropdown -->
-          <div class="dropdown">
-            <a href="#" class="nav-link">Places to Go</a>
-            <div class="dropdown-content">
-              <a href="placesToGoCanada.html" style="color: green">Canada</a>
-              <a href="placesToGoGrenada.html" style="color: green">Grenada</a>
-              <a href="placesToGoHongKong.html" style="color: green"
-                >Hong Kong</a
-              >
-              <a href="placesToGoIndia.html" style="color: green">India</a>
-              <a href="placesToGoItaly.html" style="color: green">Italy</a>
-              <a href="placesToGoSeychelles.html" style="color: green"
-                >Seychelles</a
-              >
-            </div>
-          </div>
-          <li class="nav-item">
-            <a href="" class="nav-link">Contact</a>
-          </li>
-        </ul>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
+    
     </header>
     <!-- header ends -->
-    <div class="main-container">
-      <div class="leftcolumn">
-        <div class="content-container">
-          <h2>Grenada</h2>
-          <div class="grenada">
-            <img
-              src="Grenada Images/grenada.jpeg"
-              alt="grenada"
-              width="700"
-              height="400"
-            />
-          </div>
-          <br />
-          <div class="content-container">
-            <h3>Culture</h3>
-            <p class="mt10">
-              Grenada is a Caribbean island country in the West Indies. It
-              includes the main island of Grenada and six smaller islands to the
-              north of this island.The capital, St. George’s. In 1974 Grenada
-              attained independence within the Commonwealth and membership in
-              the United Nations. It was the first of the six West Indies
-              Associated States to do so. Grenada is home to a population of
-              around 112,207 individuals. Individuals of African descent account
-              for 82.4% of Grenada’s population. Those of mixed descent and East
-              Indians comprise 13.3% and 2.2% of the country’s population
-              respectively.
-            </p>
-            <div class="culturepics">
-              <!-- <img
-                src="Grenada Images/grenada beach.jpeg"
-                alt="beach"
-                width="700"
-                height="400"
-              /> -->
-              <img
-                src="Grenada Images/jab-jab.jpeg"
-                alt="jabjab"
-                width="700"
-                height="400"
-              />
-              <p class="mt10">
-                Jab Jab is core to the culture of Grenada. In fact, the Jab Jab
-                is uniquely Grenadian, and is an aspect of our culture that
-                distinguishes the Spice Island from other islands within the
-                Caribbean region. Jab Jab is a celebration of freedom including
-                freedom from hardships. In the post slavery era, Jab Jab has
-                remained and today forms a core part of Grenadian culture and
-                rich heritage. The word, “Jab Jab” is a noun, that is French
-                Creole in origin, meaning diable or devil. The literal meaning
-                is not related to demonic culture, but spirits of our African
-                ancestors.
-              </p>
-            </div>
-          </div>
-          <br />
-          <div class="content-container">
-            <h2>Music</h2>
-            <div class="musicpic">
-              <img
-                src="Grenada Images/music.jpeg"
-                alt="music"
-                width="700"
-                height="400"
-              />
-            </div>
-            <p class="mt10">
-              The African and Carib-Amerindian heritage of the Islanders has
-              influenced Grenada’s performing arts scene. Reggae, jazz, soca,
-              Calypso, etc., are some of the country’s most popular genres of
-              music. African dances introduced in the country have evolved over
-              the years. European dances like quadrilles and picquets have also
-              shaped the Grenadian dances. Today, some of the most popular
-              dances on the islands are Carriacou Big Drum, Heel-and-Toe, and
-              Quadrille.
-            </p>
-          </div>
-          <div class="content-container">
-            <h2>Cuisine</h2>
-            <div class="foodpic">
-              <img
-                src="Grenada Images/food.jpeg"
-                alt="food"
-                width="700"
-                height="400"
-              />
-            </div>
-            <p class="mt10">
-              Grenada is known as the ‘Spice Isle’ because of its production of
-              nutmeg and mace, in fact today, the country supplies almost 40% of
-              the world’s annual crop. Oil Down is regarded as the country’s
-              national dish. It is a wholesome meal consisting of coconut milk,
-              breadfruit, dumplings, taro leaves, and salted beef or fish. The
-              meal is cooked in a large pot called karhee or curry pot. Callaloo
-              soup is a soup made of a leafy green vegetable called callaloo.
-              Rotis or flour skins/wraps are filled with vegetables, meat, fish,
-              or curried chicken and are often eaten for lunch or dinner. Cou
-              cou pois is another popular Grenadian dish. It is made of
-              vegetables and corn flour cooked slowly to produce a stiff and
-              smooth ball. It is served with chicken or fish dish. Fried bake
-              and saltfish souse, curry goat, and pelau are other dishes widely
-              consumed in the nation.
-            </p>
-          </div>
-          <br />
-          <div class="content-container">
-            <h2>Attractions</h2>
-            <h3>Experience a vibe at Carnival</h3>
-            <div class="carnival pic">
-              <img
-                src="Grenada Images/carnival.jpeg"
-                alt="carnival"
-                width="700"
-                height="400"
-              />
-            </div>
-            <p class="mt10">
-              Grenada Carnival- Spicemas. Grenada Carnival is probably the
-              number one cultural event on Grenada’s annual events calendar,
-              Spicemas (affectionately named so due to the island’s renowned
-              spice production) The Spicemas Grenada Carnival takes place
-              throughout the Caribbean each summer but Grenada’s is one of the
-              biggest and best and attracts visitors in their thousands.
-              Spicemas is the perfect representation of Grenada’s culture, with
-              soca and calypso music everywhere. Carnival Monday and Tuesday of
-              this Grenada Carnival take place in August.
-            </p>
-
-            <h3>Underwater Sculpture Park</h3>
-            <div class="sitepics">
-              <img
-                src="Grenada Images/sculpturepark.jpeg"
-                alt="sculpturepark"
-                width="700"
-                height="400"
-              />
-              <p class="mt10">
-                Explore the underwater sculpture park. It has a collection of
-                underwater contemporary art with a depth of 40 feet. Grenada’s
-                Underwater Sculpture Park is the world’s first underwater
-                sculpture park, located off the west coast of Grenada in the
-                Molinere Beauséjour Marine Protected Area. The park was created
-                by British sculptor Jason deCaires Taylor in 2006, with the aim
-                of enhancing the reef, supporting conservation efforts - it has
-                a collection of underwater contemporary art with a depth of 40
-                feet.
-              </p>
-            </div>
-            <h3>Grand Etang National Park</h3>
-            <div class="sitepics">
-              <img
-                src="Grenada Images/Grand-Etang.jpeg"
-                alt="Grand-Etang"
-                width="700"
-                height="400"
-              />
-              <p class="mt10">
-                Also, Grand Etang National Park preserves the nutmeg groves and
-                tropical rain forest of Grenada’s central highland. Etang
-                National Park is a natural wonderland in the heart of Grenada,
-                where you can explore the lush tropical rainforest, admire the
-                stunning crater lake, and discover the diverse wildlife that
-                calls this place home. Grand Etang National Park preserves the
-                nutmeg groves and tropical rain forest of Grenada’s central
-                highland. Whether you are looking for adventure or relaxation,
-                Grand Etang National Park has something for everyone.
-              </p>
-            </div>
-          </div>
+    <h2>Grenada</h2>
+    <div class="grenada">
+        <img src="Grenada Images/grenada.jpeg" alt="grenada" width="700" height="400">
+    </div>
+    <div class="content-container">
+        <h3>Culture</h3>
+        <div class="culturepics">
+            <img src="Grenada Images/grenada beach.jpeg" alt="beach" width="700" height="400">
+            <img src="Grenada Images/jabjab.jpeg" alt="jabjab" width="700" height="400">
         </div>
-      </div>
-
-      <div class="rightcolumn">
+        <p class="mt10">
+            Grenada is a Caribbean island country in the West Indies. It includes the main island of Grenada and six smaller islands to the north of this island.The capital, St. George’s. In 1974 Grenada attained independence within the Commonwealth and membership in the United Nations. It was the first of the six West Indies Associated States to do so. 	Grenada is home to a population of around 112,207 individuals. Individuals of African descent account for 82.4% of Grenada’s population. Those of mixed descent and East Indians comprise 13.3% and 2.2% of the country’s population respectively. Jab Jab is core to the culture of Grenada. In fact, the Jab Jab is uniquely Grenadian, and is an aspect of our culture that distinguishes the Spice Island from other islands within the Caribbean region. Jab Jab is a celebration of freedom including freedom from hardships. In the post slavery era, Jab Jab has remained and today forms a core part of Grenadian culture and rich heritage. The word, “Jab Jab” is a noun, that is French Creole in origin, meaning diable or devil. The literal meaning is not related to demonic culture, but spirits of our African ancestors.
+        </p>
+    </div>
+    <div class="content-container">
+    <h3>Music</h3>
+    <div class="musicpic">
+        <img src="Grenada Images/music.jpeg" alt="music" width="700" height="400">
+    </div>
+    <p class="mt10">
+        The African and Carib-Amerindian heritage of the Islanders has influenced Grenada’s performing arts scene. Reggae, jazz, soca, Calypso, etc., are some of the country’s most popular genres of music. African dances introduced in the country have evolved over the years. European dances like quadrilles and picquets have also shaped the Grenadian dances. Today, some of the most popular dances on the islands are Carriacou Big Drum, Heel-and-Toe, and Quadrille.
+    </p>
+    </div>
+    <div class="content-container">
+        <h3>Cuisine</h3>
+        <div class="foodpic">
+            <img src="Grenada Images/food.jpeg" alt="food" width="700" height="400">
+        </div>
+        <p class="mt10">
+            Grenada is known as the ‘Spice Isle’ because of its production of nutmeg and mace, in fact today, the country supplies almost 40% of the world’s annual crop. Oil Down is regarded as the country’s national dish. It is a wholesome meal consisting of coconut milk, breadfruit, dumplings, taro leaves, and salted beef or fish. The meal is cooked in a large pot called karhee or curry pot. Callaloo soup is a soup made of a leafy green vegetable called callaloo. Rotis or flour skins/wraps are filled with vegetables, meat, fish, or curried chicken and are often eaten for lunch or dinner. Cou cou pois is another popular Grenadian dish. It is made of vegetables and corn flour cooked slowly to produce a stiff and smooth ball. It is served with chicken or fish dish. Fried bake and saltfish souse, curry goat, and pelau are other dishes widely consumed in the nation.
+        </p>
+    </div>
+    <div class="content-container">
+        <h3>Attractions</h3>
+        <h3>Experience a vibe at Carnival</h3>
+        <div class="carnival pic">
+            <img src="Grenada Images/carnival.jpeg" alt="carnival" width="700" height="400">
+        </div>
+        <p class="mt10">
+            Grenada Carnival- Spicemas. Grenada Carnival is probably the number one cultural event on Grenada’s annual events calendar, Spicemas (affectionately named so due to the island’s renowned spice production) The Spicemas Grenada Carnival takes place throughout the Caribbean each summer but Grenada’s is one of the biggest and best and attracts visitors in their thousands. Spicemas is the perfect representation of Grenada’s culture, with soca and calypso music everywhere. Carnival Monday and Tuesday of this Grenada Carnival take place in August.
+        </p>
+    
+        <h3>Site seeing actvities</h3>
+        <div class="sitepics">
+        <img src="Grenada Images/sculpturepark.jpeg" alt="sculpturepark" width="700" height="400">
+        <img src="Grenada Images/Grand-Etang.jpeg" alt="Grand-Etang" width="700" height="400">
+        </div>
+        <p class="mt10">
+        Explore the underwater sculpture park. It has a collection of underwater contemporary art with a depth of 40 feet. Also, Grand Etang National Park preserves the nutmeg groves and tropical rain forest of Grenada’s central highland.
+        </p>
+    </div>
+    <div class="rightcolumn">
         <div>
           <h2>About Us</h2>
           <p class="mt10">
@@ -244,34 +98,15 @@
           </p>
         </div>
       </div>
+      <!-- right column ends -->
     </div>
-
+    <!-- main container ends -->
     <div class="footer">
-      <section class="home-newsletter">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="single">
-                <h2>Subscribe to our Newsletter</h2>
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Enter your email"
-                  />
-                  <span class="input-group-btn">
-                    <button class="btn btn-theme" type="submit">
-                      Subscribe
-                    </button>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <h2>Footer</h2>
     </div>
-
+    
+    <!-- footer starts -->
+    
     <script type="text/javascript" src="javascript.js"></script>
-  </body>
+</body>
 </html>
